@@ -3,13 +3,19 @@
 
 \begin{document}
 
-    This is some text, and here is an image:
+    This is some text, and here are two images side by side:
 
     \begin{figure}[h]
-        \centering
-        \includegraphics[width=0.6\textwidth]{test.png}
+        \begin{minipage}[t]{0.48\linewidth}
+            \includegraphics[width=\textwidth]{test.png}
+        \end{minipage}
+        \hfill
+        \begin{minipage}[t]{0.48\linewidth}
+            \includegraphics[width=\textwidth]{test.png}
+        \end{minipage}
         \caption{This is the image caption.}
         \label{fig:my_image}
     \end{figure}
 
 \end{document}
+
